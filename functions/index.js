@@ -150,3 +150,80 @@ exports.serverKey = functions.https.onCall((data, context) => {
         serverKey: "AAAAbNhVpI8:APA91bE028K9HSkzF3kpsA6e5jP4i9aSky7xBuOl9dxKfptI0Xm7NqswPWZkJHxkf0VXh4i02wZPG9vCzOIw1lRFmWUAmWKopvS5VtPPXOwemSc9zhugB8qvZjM9PpWDxtRR9uJnQnc-"
       };
 });
+
+// exports.sendNotificationToTopic = functions.firestore.document('testy/{uid}').onWrite(async (event) => {
+//    let docID = event.after.id;
+//    let title = event.after.get('title');
+//    let content = event.after.get('content');
+
+//     var message = {
+//         notification: {
+//             title: title,
+//             body: content,
+//         },
+//         topic:'1XuigWbvxCPL7p3SwKdLjNV8DCz2'
+//     };
+
+//     let response = await admin.messaging().send(message);
+//     console.log(response);
+// });
+
+// exports.sendNotificationToFCMToken = functions.firestore.document('message/{mUid}').onWrite(async (event) => {
+//     const uid = event.after.get('userUid');
+//     const title = event.after.get('title');
+//     const content = event.after.get('content');
+//     let userDoc = await admin.firestore().doc(`users/${uid}`).get();
+//     let fcmToken = userDoc.get('fcm');
+
+//     var message = {
+//         notification: {
+//             title: title,
+//             body: content,
+
+//         },
+//         token: fcmToken,
+//     }
+
+//     let response = await admin.messaging().send(message);
+//     console.log(response);
+// });
+
+
+// exports.makeUppercase = functions.database.ref('/userTests/{userId}/original').onCreate((snapshot, context) => {
+
+//       // Grab the current value of what was written to the Realtime Database.
+//       const original = snapshot.val();
+//       console.log('Uppercasing', context.params.userId, original);
+//       const uppercase = original.toUpperCase();
+//       console.log('Uppercased', context.params.userId, uppercase);
+//       // You must return a Promise when performing asynchronous tasks inside a Functions such as
+//       // writing to the Firebase Realtime Database.–
+//       // Setting an "uppercase" sibling in the Realtime Database returns a Promise.
+//       return snapshot.ref.parent.child('uppercase').set(uppercase);
+//     });
+
+
+//     exports.testFunction = functions.database.ref('/userTests/{userId}/Name').onCreate((snapshot, context) => {
+//       var name = snapshot.val();
+//       console.log(name);
+//     });
+
+//     exports.getNotficationInfoLikedPost = functions.database.ref("Feeds/{feedId}/likesControl").onCreate((snapshot, context) => {
+//         // var request = snapshot.val();
+
+//         // var payload = {
+//         //     data:{
+//         //         username: context.parent.
+//         //     }
+//         // }
+//             const name = snapshot.val();
+//             var likerUid = Object.keys(snapshot.val())[0];
+//             var userUid = snapshot.ref.parent.child('author').once('value').then(author => {
+//                 console.log("userUid", author.val());
+
+//             });
+
+//             console.log("notifTest", context.params.feedId, name);
+//             console.log("likerUid", likerUid);
+
+//     });
