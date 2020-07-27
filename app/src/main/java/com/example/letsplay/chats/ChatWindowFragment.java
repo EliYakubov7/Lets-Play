@@ -94,7 +94,7 @@ public class ChatWindowFragment extends Fragment implements Serializable {
     private EditText msgEt;
     //Receiver for the message receive
     private BroadcastReceiver receiver;
-    private final String API_KEY = "AAAAbNhVpI8:APA91bE028K9HSkzF3kpsA6e5jP4i9aSky7xBuOl9dxKfptI0Xm7NqswPWZkJHxkf0VXh4i02wZPG9vCzOIw1lRFmWUAmWKopvS5VtPPXOwemSc9zhugB8qvZjM9PpWDxtRR9uJnQnc-";
+    private final String API_KEY = "Your_Api_Key";
 
     //Check if the user is in this window chat so he won't get a message notification
     public static boolean isActive = false;
