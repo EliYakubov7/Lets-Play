@@ -264,7 +264,7 @@
     <string name="label_warning">Warning</string>
     <string name="label_removal_question_part1">Are you sure you wanna remove</string>
     <string name="label_removal_question_part2">from your friend list?</string>
-    <string name="TOKEN_KEY" translatable="false">AAAAbNhVpI8:APA91bE028K9HSkzF3kpsA6e5jP4i9aSky7xBuOl9dxKfptI0Xm7NqswPWZkJHxkf0VXh4i02wZPG9vCzOIw1lRFmWUAmWKopvS5VtPPXOwemSc9zhugB8qvZjM9PpWDxtRR9uJnQnc-</string>
+    <string name="TOKEN_KEY" translatable="false">Your_Token_Key</string>
     <string name="FCM_URL" translatable="false">https://fcm.googleapis.com/fcm/send</string>
     <string name="label_new_message_from">New message from</string>
     <string name="explore">Discover</string>
