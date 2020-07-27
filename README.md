@@ -5,7 +5,8 @@ Social Network Android App For Musicans
 
 - This is my second project in Android Studio
 - The main purpose of the application is to connect between the different musicians to play, write, produce and spend time together
-- The project uses : Fragments, Material Design, Broadcast & Services, Google API Firebase Authentication, Database, FCM, Storage, Functions.
+- The project uses : Fragments, Material Design, Broadcast & Services, Google API, Firebase Authentication, Firebase Database, Firebase Cloud Messaging,
+Firebase Storage, Firebase Functions.
 - The app supports two language : English and Hebrew
 
 ### Youtube
