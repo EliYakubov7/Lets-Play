@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_feeds"
+        android:visibility="gone"
+        android:id="@+id/no_feeds_tv" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/home_feeds_toolbar"
+        app:subtitleTextColor="@color/white"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/nav_home_feeds"
+        app:titleTextColor="@color/white"
+        app:layout_collapseMode="pin"
+        style="@style/CustomToolbarStyle"
+        android:textColorPrimary="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_to_refresh"
+        android:layout_below="@id/home_feeds_toolbar">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_feeds_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <ProgressBar
+        android:id="@+id/home_feed_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/colorPrimaryLight"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:elevation="10dp"
+        style="?android:attr/progressBarStyle"/>
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/feed_fragment_fab"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            app:useCompatPadding="true"
+            android:backgroundTint="@color/colorAccent"
+            app:rippleColor="@color/white"
+            android:src="@drawable/ic_baseline_add_24"/>-->
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_frag_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="8dp"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="@string/explore"
+        app:titleTextColor="@color/white" />
+
+    <SearchView
+        android:id="@+id/search_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_toolbar"
+        android:layout_marginTop="10dp"
+        android:elevation="8dp"
+        android:iconifiedByDefault="false"
+        android:labelFor="@id/search_toolbar"
+        android:queryHint="@string/filter_search_view_hint"
+        android:visibility="gone" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_search_view" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/search_bottom_frag_no_result_iv"
+            android:layout_width="60dp"
+            android:visibility="gone"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_question_mark" />
+
+        <TextView
+            android:id="@+id/no_results_tv"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:text="@string/label_no_results" />
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/search_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/colorPrimaryLight"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:elevation="10dp"
+        style="?android:attr/progressBarStyle"/>
+
+</RelativeLayout>

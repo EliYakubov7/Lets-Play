@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/label_prefs_personal_info">
+        <Preference
+            android:icon="@drawable/ic_profile"
+            android:key="basic_info_preference"
+            app:fragment="com.example.letsplay.settings.BasicInfoPreferenceFragment"
+            android:summary="@string/label_basic_info_summary"
+            android:title="@string/label_prefs_basic_info_title" />
+
+        <Preference
+            android:icon="@drawable/ic_history"
+            android:key="biography_preference"
+            android:summary="@string/label_let_everyone_know"
+            android:title="@string/label_about_me" />
+
+        <Preference
+            android:icon="@drawable/ic_guitar"
+            android:key="instrument_preference"
+            android:summary="@string/label_prefs_instruments_summary"
+            android:title="@string/label_prefs_instruments_title" />
+
+        <Preference
+            android:icon="@drawable/ic_equalizer"
+            android:key="genres_preference"
+            android:entries="@array/genres"
+            android:entryValues="@array/genresInts"
+            android:summary="@string/label_prefs_genres_summary"
+            android:title="@string/label_prefs_genres_title" />
+
+        <Preference
+            android:icon="@drawable/ic_artist"
+            android:key="favorite_artist_preference"
+            android:summary="@string/label_prefs_artists_summary"
+            android:title="@string/label_prefs_artists_title"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/label_prefs_account_settings">
+        <Preference
+            android:icon="@drawable/ic_door"
+            android:key="logout_preference"
+            android:title="@string/label_prefs_logout" />
+
+        <Preference
+            android:icon="@drawable/ic_remove"
+            android:key="remove_preference"
+            android:title="@string/label_prefs_delete_account" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

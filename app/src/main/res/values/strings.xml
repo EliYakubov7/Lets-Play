@@ -1,0 +1,306 @@
+<resources>
+
+    <string name="app_name">LetsPlay</string>
+    <string name="label_prefs_account_settings">Account Settings</string>
+
+    <string name="label_prefs_delete_account">Delete Account</string>
+    <string name="label_prefs_logout">Logout</string>
+
+
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_birth_date">Date of Birth</string>
+    <string name="hint_location">Location</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="choice">OR</string>
+    <string name="btn_sign_up">SIGN UP</string>
+    <string name="btn_link_to_register">Create New Account</string>
+
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">Please write your Email you registered with so we can send you password reset instructions.</string>
+    <string name="btn_reset_password">RESET PASSWORD</string>
+
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="nav_home_feeds">Feed</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_chats">Chats</string>
+    <string name="chats_search_hint">Search for a chat</string>
+    <string name="chat_window_status_online">Online</string>
+    <string name="chat_window_status_offlne">Offline</string>
+    <string name="chat_window_type_msg_hint">Type a message</string>
+    <string name="friends_list">Friends List</string>
+    <string name="settings">Settings</string>
+    <string name="profile_add_friend">Add to friend list</string>
+    <string name="profile_send_message">Send a messge</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="playing_label">Playing:</string>
+    <string name="search_title">Search</string>
+    <string name="filter_search_view_hint">Filter results</string>
+    <string name="filter_label">Filter</string>
+
+    <!--Musical Instruments-->
+    <string name="instrument_guitar">Guitar</string>
+    <string name="instrument_bass_guitar">Bass guitar</string>
+    <string name="instrument_yuklili">Yuklili</string>
+    <string name="instrument_keyboards">Keyboards</string>
+    <string name="instrument_piano">Piano</string>
+    <string name="instrument_drums">Drums</string>
+    <string name="instrument_electronic_drums">Electronic drums</string>
+    <string name="instrument_darbuka">Darbuka</string>
+    <string name="instrument_clarinet">Clarinet</string>
+    <string name="instrument_flute">Flute</string>
+    <string name="instrument_alto_saxophone">Alto saxophone</string>
+    <string name="instrument_tenor_saxophone">Tenor saxophone</string>
+    <string name="instrument_baritone_saxophone">Baritone saxophone</string>
+    <string name="instrument_soprano_saxophone">Soprano saxophone</string>
+    <string name="instrument_trumpet">Trumpet</string>
+    <string name="instrument_trombone">Trombone</string>
+    <string name="instrument_french_horn">French horn</string>
+    <string name="instrument_tuba">Tuba</string>
+    <string name="instrument_harmonica">Harmonica</string>
+    <string name="instrument_melodica">Melodica</string>
+    <string name="instrument_xylophone">Xylophone</string>
+    <string name="instrument_violin">Violin</string>
+    <string name="instrument_viola">Viola</string>
+    <string name="instrument_cello">Cello</string>
+    <string name="instrument_double_bass">Double bass</string>
+    <string name="instrument_vocal">Vocal</string>
+
+    <!--Skill levels-->
+    <string name="skill_beginner">Beginner</string>
+    <string name="skill_intermediate">Intermediate</string>
+    <string name="skill_Professional">Professional</string>
+    <string name="skill_expert">Expert</string>
+
+    <!--Music genres-->
+    <string name="genre_blues">Blues</string>
+    <string name="genre_jazz">Jazz</string>
+    <string name="genre_classical">Classical</string>
+    <string name="genre_country">Country</string>
+    <string name="genre_funk">Funk</string>
+    <string name="genre_latin">Latin</string>
+    <string name="genre_pop">Pop</string>
+    <string name="genre_rock">Rock</string>
+    <string name="genre_metal">Metal</string>
+    <string name="genre_rap">Rap</string>
+    <string name="genre_reggae">Reggae</string>
+    <string name="genre_electronic">Electronic</string>
+    <string name="genre_rnb">Rythm N Blues</string>
+    <string name="genre_hiphop">Hip-hop</string>
+
+    <!--Instrument types-->
+    <string name="label_choose_instrument_type">Choose a type:</string>
+    <string name="label_main_instrument">Main:</string>
+    <string name="label_secondary_instrument">Secondary:</string>
+
+    <string-array name="genres">
+        <item>@string/genre_blues</item>
+        <item>@string/genre_jazz</item>
+        <item>@string/genre_classical</item>
+        <item>@string/genre_country</item>
+        <item>@string/genre_funk</item>
+        <item>@string/genre_latin</item>
+        <item>@string/genre_pop</item>
+        <item>@string/genre_rock</item>
+        <item>@string/genre_metal</item>
+        <item>@string/genre_rap</item>
+        <item>@string/genre_reggae</item>
+        <item>@string/genre_electronic</item>
+        <item>@string/genre_rnb</item>
+        <item>@string/genre_hiphop</item>
+    </string-array>
+
+    <integer-array name="genresInts">
+        <item>2131820638</item>
+        <item>2131820644</item>
+        <item>2131820639</item>
+        <item>2131820640</item>
+        <item>2131820642</item>
+        <item>2131820645</item>
+        <item>2131820647</item>
+        <item>2131820651</item>
+        <item>2131820646</item>
+        <item>2131820648</item>
+        <item>2131820649</item>
+        <item>2131820641</item>
+        <item>2131820650</item>
+        <item>2131820643</item>
+    </integer-array>
+
+    <string-array name="skills">
+        <item>@string/skill_beginner</item>
+        <item>@string/skill_intermediate</item>
+        <item>@string/skill_Professional</item>
+        <item>@string/skill_expert</item>
+    </string-array>
+
+    <integer-array name="skillsInts">
+        <item>2131820838</item>
+        <item>2131820840</item>
+        <item>2131820837</item>
+        <item>2131820839</item>
+    </integer-array>
+
+    <string-array name="instruments">
+        <item>@string/instrument_none</item>
+        <item>@string/instrument_vocal</item>
+        <item>@string/instrument_guitar</item>
+        <item>@string/instrument_bass_guitar</item>
+        <item>@string/instrument_yuklili</item>
+        <item>@string/instrument_keyboards</item>
+        <item>@string/instrument_piano</item>
+        <item>@string/instrument_drums</item>
+        <item>@string/instrument_electronic_drums</item>
+        <item>@string/instrument_darbuka</item>
+        <item>@string/instrument_clarinet</item>
+        <item>@string/instrument_flute</item>
+        <item>@string/instrument_alto_saxophone</item>
+        <item>@string/instrument_tenor_saxophone</item>
+        <item>@string/instrument_baritone_saxophone</item>
+        <item>@string/instrument_soprano_saxophone</item>
+        <item>@string/instrument_trumpet</item>
+        <item>@string/instrument_trombone</item>
+        <item>@string/instrument_french_horn</item>
+        <item>@string/instrument_tuba</item>
+        <item>@string/instrument_harmonica</item>
+        <item>@string/instrument_melodica</item>
+        <item>@string/instrument_xylophone</item>
+        <item>@string/instrument_violin</item>
+        <item>@string/instrument_viola</item>
+        <item>@string/instrument_cello</item>
+        <item>@string/instrument_double_bass</item>
+    </string-array>
+
+    <integer-array name="instrumentsInts">
+        <item>2131820680</item>
+        <item>2131820689</item>
+        <item>2131820676</item>
+        <item>2131820667</item>
+        <item>2131820691</item>
+        <item>2131820678</item>
+        <item>2131820681</item>
+        <item>2131820672</item>
+        <item>2131820673</item>
+        <item>2131820670</item>
+        <item>2131820669</item>
+        <item>2131820674</item>
+        <item>2131820665</item>
+        <item>2131820683</item>
+        <item>2131820666</item>
+        <item>2131820682</item>
+        <item>2131820685</item>
+        <item>2131820684</item>
+        <item>2131820675</item>
+        <item>2131820686</item>
+        <item>2131820677</item>
+        <item>2131820679</item>
+        <item>2131820690</item>
+        <item>2131820688</item>
+        <item>2131820687</item>
+        <item>2131820668</item>
+        <item>2131820671</item>
+    </integer-array>
+
+    <string-array name="instrument_types">
+        <item>@string/label_main_no_colon</item>
+        <item>@string/label_secondary_no_colon</item>
+    </string-array>
+
+
+    <string name="label_add">Add</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_ok">Ok</string>
+    <string name="label_choose_instrument">Choose instrument:</string>
+    <string name="label_choose_skill_level">Choose skill level:</string>
+    <string name="label_delete_Account_warning">this action is irreversible and the data of your account will be permanently deleted.</string>
+    <string name="label_about_myself">About Me</string>
+    <string name="label_basic_info">Basic info</string>
+    <string name="label_instruments">Instruments</string>
+    <string name="label_favorite_genres">Favorite Genres</string>
+    <string name="label_favorite_artists">Favorite Artists</string>
+    <string name="instrument_none">None</string>
+    <string name="label_yes">Yes</string>
+    <string name="label_no">No</string>
+    <string name="label_filter_by">Filter by:</string>
+    <string name="label_filter_by_distance">Distance</string>
+    <string name="label_filter_by_friends">Friends</string>
+    <string name="label_filter_by_most_recent">Most recent</string>
+    <string name="label_filter_by_my_posts">My posts</string>
+    <string name="label_search_by">Search by:</string>
+    <string name="label_instrument">Instrument</string>
+    <string name="label_gender">Gender:</string>
+    <string name="label_prefs_basic_info_title">Basic Information</string>
+    <string name="label_prefs_instruments_title">Instruments</string>
+    <string name="label_prefs_instruments_summary">Update your main and secondary instruments.</string>
+    <string name="label_prefs_genres_title">Genres</string>
+    <string name="label_prefs_genres_summary">Add or remove your favorite music genres.</string>
+    <string name="label_prefs_artists_title">Artists</string>
+    <string name="label_prefs_artists_summary">Add or remove your favorite bands and music artist.</string>
+    <string name="label_prefs_personal_info">Personal information</string>
+    <string name="label_search_by_name_hint">Search by name</string>
+    <string name="comments_type_hint">Type a comment</string>
+    <string name="label_send">Send</string>
+    <string name="label_location_dialog_title">Allow location access</string>
+    <string name="label_location_dialog_body">LetsPlay requires location permission to give you the best experience. If the request is declined, it will not work properly.</string>
+    <string name="label_settings">Settings</string>
+    <string name="label_quit">Quit</string>
+    <string name="label_whats_on_your_mind">What\'s on your mind?</string>
+    <string name="label_post">Post</string>
+    <string name="label_tell_everyone_who_you_are">Tell everyone who you are...</string>
+    <string name="label_main_no_colon">Main</string>
+    <string name="label_secondary_no_colon">Secondary</string>
+    <string name="label_no_results">No results</string>
+    <string name="label_no_friends_yet">This user has no friends yet</string>
+    <string name="label_added_successfully">was added successfully to your friend list!</string>
+    <string name="label_removed_successfully">was removed successfully from your friend list!</string>
+    <string name="label_addition_faild">Addition failed</string>
+    <string name="label_removal_failed">Removal failed</string>
+    <string name="label_warning">Warning</string>
+    <string name="label_removal_question_part1">Are you sure you wanna remove</string>
+    <string name="label_removal_question_part2">from your friend list?</string>
+    <string name="TOKEN_KEY" translatable="false">AAAAbNhVpI8:APA91bE028K9HSkzF3kpsA6e5jP4i9aSky7xBuOl9dxKfptI0Xm7NqswPWZkJHxkf0VXh4i02wZPG9vCzOIw1lRFmWUAmWKopvS5VtPPXOwemSc9zhugB8qvZjM9PpWDxtRR9uJnQnc-</string>
+    <string name="FCM_URL" translatable="false">https://fcm.googleapis.com/fcm/send</string>
+    <string name="label_new_message_from">New message from</string>
+    <string name="explore">Discover</string>
+
+    <!--Password Strength-->
+    <string name="password_strength_weak">Weak</string>
+    <string name="password_strength_medium">Medium</string>
+    <string name="password_strength_strong">Strong</string>
+    <string name="password_strength_very_strong">Very Strong</string>
+    <string name="label_continue_as_a_guest">Continue as a guest</string>
+    <string name="label_guest_warning">Only registered users can enjoy this feature</string>
+    <string name="label_enter_artist_name_hint">Enter artist/band name</string>
+    <string name="label_comments">Comments</string>
+    <string name="label_close">Close</string>
+    <string name="label_write_post">Write a post</string>
+    <string name="label_filter_results">Filter results</string>
+    <string name="label_change_your_location">Change your location</string>
+    <string name="label_address">Address</string>
+    <string name="label_about_me">About me</string>
+    <string name="label_are_you_sure_logout">Are you sure you want to logout from your account?</string>
+    <string name="label_delete_account">Delete account</string>
+    <string name="label_basic_info_summary">Update your basic info, email and address.</string>
+    <string name="label_let_everyone_know">Let everyone know who you are.</string>
+    <string name="label_km">Km</string>
+    <string name="no_chats_yet">No chats yet.</string>
+    <string name="add_artist_swipe_to_remove">Add artists, swipe to remove</string>
+    <string name="select_genre_from_list_swipe_to_remove">Select Genre from list, swipe to remove</string>
+    <string name="welcome_to_letsplay">\n\n\n\nWelcome to LetsPlay :)</string>
+    <string name="welcome_lets_play_edit">\n\n\n\n\n\nEdit your profile so people can find you\n\n Enjoy :)</string>
+    <string name="welcome_discover">\n\n\n\n\n\nDiscover people to play with by going to Feed or Discover</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="sent_forget_password">We have sent you instructions to reset your password!</string>
+    <string name="failed_sent_password">Failed to send reset email!</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="no_feeds">No feeds :(</string>
+
+</resources>
+
+<!-- TODO: Finish with the localization strings and then start to set the instruments, the genres and the skill levels in the preferences-->

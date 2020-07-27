@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="@string/label_basic_info"
+        app:iconSpaceReserved="false">
+
+        <EditTextPreference
+            android:inputType="textPersonName|textCapWords"
+            android:key="first_name_preference"
+            android:title="@string/hint_first_name"
+            app:iconSpaceReserved="false" />
+
+        <EditTextPreference
+            android:inputType="textPersonName|textCapWords"
+            android:key="last_name_preference"
+            android:title="@string/hint_last_name"
+            app:iconSpaceReserved="false" />
+
+
+        <Preference
+            android:inputType="textCapWords"
+            android:key="address_preference"
+            android:title="@string/label_address"
+            app:iconSpaceReserved="false" />
+
+
+        <Preference
+            android:key="date_of_birth_preference"
+            android:title="@string/hint_birth_date"
+            app:iconSpaceReserved="false" />
+
+        <EditTextPreference
+            android:inputType="textEmailAddress"
+            android:key="email_preference"
+            android:title="@string/hint_email"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

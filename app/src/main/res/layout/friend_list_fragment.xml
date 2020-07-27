@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/friend_list_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/colorPrimaryLight"
+        android:visibility="visible"
+        android:layout_centerInParent="true" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/home_feeds_toolbar"
+        style="@style/CustomToolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="10dp"
+        android:textColorPrimary="@color/white"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:subtitleTextColor="@color/white"
+        app:title="@string/friends_list"
+        app:titleTextColor="@color/white" />
+
+    <SearchView
+        android:id="@+id/friends_search_view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_feeds_toolbar"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/label_filter_results" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friends_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/friends_search_view"
+        android:layout_marginTop="5dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/no_friends_yet_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

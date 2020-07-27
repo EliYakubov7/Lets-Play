@@ -1,0 +1,100 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+    <!--Toolbar theme-->
+    <style name="CustomToolbarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:actionMenuTextColor">@color/colorWhite</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:itemBackground">#36A6A4A4</item>
+        <item name="android:itemTextAppearance">@style/optionMenuTextApearance</item>
+    </style>
+
+    <style name="optionMenuTextApearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--Menu Item Theme-->
+
+    <!--Input Theme-->
+
+    <!-- Profile Material Design -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyExpandedToolbar" parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="MyCollapsedToolBar" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+
+    <!-- BottomSheet -->
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottomsheet_rounded_background</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateVisible</item>>
+    </style>
+
+    <!-- Text Headers Style -->
+    <style name="TextHeaderStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorStandardBlack</item>
+    </style>
+
+    <!-- Header Text Style -->
+    <style name="HeaderTextStyle">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorStandardBlack</item>
+    </style>
+
+    <!-- Text Style -->
+    <style name="TextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorStandardBlack</item>
+    </style>
+
+    <!-- Date picker Style -->
+    <style name="MySpinnerDatePickerStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <!-- The launcher theme -->
+    <style name="Theme.AppCompat.Light.NoActionBar.Launcher">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+    <!-- showcase style -->
+    <style name="MyShowCaseTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">50sp</item>
+        <item name="android:paddingTop">50dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryLight</item>
+    </style>
+
+
+</resources>

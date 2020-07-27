@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_nav_feed"
+        android:title="@string/nav_home_feeds"
+        android:icon="@drawable/ic_baseline_dynamic_feed_24"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_nav_profile"
+        android:title="@string/nav_profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_nav_search"
+        android:title="@string/explore"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_nav_chats"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="@string/nav_chats"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/uncheckedItem"
+        android:visible="false"
+        android:title="" />
+</menu>

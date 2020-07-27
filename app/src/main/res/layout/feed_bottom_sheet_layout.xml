@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/feed_filter_close_Ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/label_close"
+            android:src="@drawable/ic_baseline_close_24"
+            android:tint="@color/colorStandardBlack" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/label_filter_by" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/feed_filter_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <RadioButton
+            android:id="@+id/friends_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_filter_by_friends"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/most_recent_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_filter_by_most_recent"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/my_posts_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_filter_by_my_posts"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/distance_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_filter_by_distance"
+            android:textSize="20sp" />
+        <!-- By Distance -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/distance_km_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:text="0 km" />
+
+
+            <com.warkiz.widget.IndicatorSeekBar
+                android:id="@+id/feed_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isb_max="160"
+                app:isb_min="1"
+                app:isb_seek_smoothly="true"
+                app:isb_show_tick_texts="true" />
+        </LinearLayout>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:text="@string/nav_search"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/home_bottom_filter_btn"/>
+
+</LinearLayout>

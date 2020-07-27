@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add_remove_friend"
+        android:icon="@drawable/ic_baseline_person_add_24"
+        android:iconTint="@color/white"
+        android:title="@string/profile_add_friend"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/other_profile_action_friends_list"
+        android:icon="@drawable/ic_baseline_people_24"
+        android:iconTint="@color/white"
+        android:title="@string/friends_list"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_send_message"
+        android:icon="@drawable/ic_send"
+        android:iconTint="@color/white"
+        android:title="@string/profile_send_message"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ef5350</color>
+    <color name="colorPrimaryDark">#b61827</color>
+    <color name="colorPrimaryLight">#ff867c</color>
+    <color name="colorAccent">#3f51b5</color>
+
+    <color name="white">#ffffff</color>
+    <color name="colorRed">#EB3349</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparentWhite">#cccccc</color>
+    <color name="colorGray">#A6A4A4</color>
+    <color name="colorGrayLike">#757575</color>
+    <color name="colorStandardBlack">#262626</color>
+    <color name="colorDarkBlue">#001621</color>
+    <color name="dialogBtnColor">#3F8E82</color>
+</resources>
