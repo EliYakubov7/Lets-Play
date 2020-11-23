@@ -1,5 +1,5 @@
 # Lets-Play
-Social Network Android App For Musicans
+Social Network Android App For Musicians
 
 ## About the project :
 
