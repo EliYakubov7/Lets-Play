@@ -7,11 +7,11 @@ Social Network Android App For Musicians
 - The main purpose of the application is to connect between the different musicians to play, write, produce and spend time together
 - The project uses : Fragments, Material Design, Broadcast & Services, Google API, Firebase Authentication, Firebase Database, Firebase Cloud Messaging,
 Firebase Storage, Firebase Cloud Functions.
-- The app supports two language : English and Hebrew
+- The app supports two languages : English and Hebrew
 
 ### Youtube
 [<img src="https://github.com/EliYakubov7/Lets-Play/blob/master/screenshots/youtube.png" width="500">
-](https://youtu.be/tU2E725R_BM "YouTube Video")
+](https://youtu.be/F2qWhhUqxVI "YouTube Video")
 
 ### Splash Screen
 <img src="https://github.com/EliYakubov7/Lets-Play/blob/master/screenshots/splash_screen.jpg" width="250">  
